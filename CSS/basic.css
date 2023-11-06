@@ -8,8 +8,8 @@ body {
 /* Style the header section */
 header {
     background-color: #A3B18A;
-    padding: 5px;
-    margin: 10px 350px 0px 350px; /* Create spacing around the header */
+    padding: 0.3125em;
+    margin: 0.625em 20% 0em 20%; /* Create spacing around the header */
     border-radius: 50px; /* Add rounded corners */
     box-shadow: 0 4px 8px 0;
 }
@@ -22,7 +22,7 @@ nav ul {
 
 nav ul li {
     display: inline; /* Display listed links inline */
-    margin-right: 100px; /* Add spacing between the links */
+    margin-right: 6.25em; /* Add spacing between the links */
 }
 
 /* Define common styles for navigation links */
@@ -52,11 +52,11 @@ a:hover {
 /* Style for the three columns within the container */
 .column1, .column2, .column3 {
     width: 30%;
-    padding: 20px;
-    margin: 20px;
+    padding: 1.25em;
+    margin: 1.25em;
     box-sizing: border-box;
     box-shadow: 0 4px 8px 0;
-    height: 730px;
+    height: 45.625em;
     border-radius: 50px;
     background-color: #A3B18A;
 }
@@ -81,18 +81,18 @@ h1 {
 .main-img {
     width: 60%;
     height: 60%;
-    margin-left: 40px;
+    margin-left: 2.5em;
 }
 
 /* Style of footer */
 .foot {
-    padding: 15px;
-    margin: 15px 350px 15px 350px;
+    padding: 0.9375em;
+    margin: 0.9375em 20% 0.9375em 20%;
     box-sizing: border-box;
     box-shadow: 0 4px 8px 0;
-    height: 100px;
+    height: 6.25em;
     background-color: #A3B18A;
-    border-radius: 50px;
+    border-radius: 3.125em;
     text-align: center;
     font-family: 'Trebuchet MS';
     opacity: 75%;
@@ -105,9 +105,9 @@ a.active {
 
 /* Style for the container around the contact form */
 .contact-container{
-    height: 730px;
+    height: 45.625em;
     background-color: #A3B18A;
-    margin: 20px 30% 20px 30%;
+    margin: 1.25em 30% 1.5625em 30%;
     border-radius: 50px;
     box-shadow: 0 4px 8px 0;
     text-align: center;
@@ -119,11 +119,12 @@ input {
     width: 70%;
     margin-left: 12%;
     margin-right: 12%;
-    font-size: 20px;
-    padding: 16px 16px;
-    border-radius: 10px;
+    font-size: 1.25em;
+    padding: 1em 1em ;
+    border-radius: 0.625em;
     border-color: black;
-    margin-bottom: 20px;
+    margin-bottom: 1.25em;
+    color: #344E41;
 }
 
 /* Style for the textarea of the contact form */
@@ -132,20 +133,21 @@ textarea {
     width: 70%;
     margin-left: 12%;
     margin-right: 12%;
-    font-size: 20px;
-    padding: 16px 16px;
-    border-radius: 10px;
+    font-size: 1.25em;
+    padding: 1em 1em;
+    border-radius: 0.625em;
     border-color: black;
-    margin-bottom: 25px;
+    margin-bottom: 1.5625em;
+    color: #344E41;
 }
 
 /* Style for the submit button */
 button {
     background-color: #D6D6B1;
-    border-radius: 20px;
+    border-radius: 1.25em;
     border-color: black;
-    font-size: 22px;
-    padding: 10px 18px;
+    font-size: 1.375em;
+    padding: 0.625em 1.125em;
     text-align: center;
     display: flex;
     margin: auto;
@@ -162,5 +164,5 @@ h2 {
     text-align: center;
     font-size: 2.5em;
     color: #344E41;
-    padding-top: 20px;
+    padding-top: 1.25em;
 }
