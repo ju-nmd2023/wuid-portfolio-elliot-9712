@@ -4,57 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/basic.css">
-    <title>Portfolio</title> <!-- Title of Webpage-->
+    <title>Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
+        <p id="logo">Elliot Nilsson</p>
         <nav>
             <ul>
-                <li><h1><a href="index.html">Elliot Nilsson</a></h1></li>
-                <li><a href="#">About</a></li> <!-- Link to About -->
-                <li><a href="#">Products</a></li> <!-- Link to Interests -->
-                <li><a href="contact.html">Contact</a></li> <!-- Link to contacts -->
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="project.html">
+                    <li>Projects</li>
+                </a>
+                <a href="contact.html">
+                    <li>Contact</li>
+                </a>
             </ul>
         </nav>
     </header>
-    <div class="container"> <!-- Container for the three columns -->
-        <div class="column1"> <!-- First column -->
-            <h1>About Me</h1>
-            <ul class="information"> <!-- Information class -->
-                <li><p>Name - Elliot Nilsson</p></li>
-                <li><p>Age - 19</p></li>
-                <li><p>From - <a href="https://tinyurl.com/Google-Maps-Markaryd" target="_blank">Markaryd, Sweden</a></li> <!-- Google Maps link to Markaryd -->
-            </ul>
-            <img class="main-img" src="IMG/IMG_2886.JPG" alt="Picture of Elliot"> <!-- Profile picture -->
-        </div>
-        <div class="column2"> <!-- Second column -->
-            <h1>My work</h1>
-                <ul class="assignments"> <!-- Assignment class -->
-                    <li><a href="#">Assignment 1</a></li>
-                    <br>
-                    <li><a href="#">Assignment 2</a></li>
-                    <br>
-                    <li><a href="#">Assignment 3</a></li>
-                    <br>
-                    <li><a href="#">Assignment 4</a></li>
-                    <br>
-                    <li><a href="#">Assignment 5</a></li>
-                </ul>
-        </div>
-        <div class="column3"> <!-- Third column -->
-            <h1>Future Projects</h1>
-            <ul class="future"> <!-- Future Projects class -->
-                <li><p>Guess The Flag Website</p></li> 
-                <li><p>Capybara Website</p></li>
-                <li><p>Guess The Country Website</p></li>
-            </ul>
-        </div>
-    </div>
+    <main>        
+        <h1>My Portfolio</h1>
+        <p>My name is Elliot, I'm 19 years old and I'm studying my first year of New Media Design at Jönköping Univeristy</p>
+        <img class="main-img" src="img/me.JPG" alt="Elliot">
+    </main>
     <footer>
-        <div class="foot">
-            <p>Copyright © Elliot Nilsson <br>
-                All rights reserved.</p>
-        </div>
+        <p>Copyright © Elliot Nilsson <br>
+            All rights reserved.</p>
     </footer>
 </body>
 </html>

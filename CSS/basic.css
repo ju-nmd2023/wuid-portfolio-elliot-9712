@@ -1,116 +1,65 @@
-/* Set some basic styles for the entire page */
-body {
-    margin: 0;
-    font-family: 'Trebuchet MS';
-    background-color: #588157;
+* {
+    font-family: 'Open Sans', sans-serif;
 }
+/* HEADER */
 
-/* Style the header section */
 header {
-    background-color: #A3B18A;
-    padding: 0.3125em;
-    margin: 0.625em 20% 0em 20%; /* Create spacing around the header */
-    border-radius: 50px; /* Add rounded corners */
-    box-shadow: 0 4px 8px 0;
-}
-
-/* Style the navigation bar */
-nav ul {
-    list-style-type: none; /* Remove list bullets */
-    text-align: center; /* Center-align the link text */
-}
-
-nav ul li {
-    display: inline; /* Display listed links inline */
-    margin-right: 6.25em; /* Add spacing between the links */
-}
-
-/* Define common styles for navigation links */
-nav ul li{
-    color: #D6D6B1; /* text color */
-    font-size: 1.5em; /* font size */
-    text-decoration: none; /* Remove text underlines */
-}
-
-/* Style the link color and removes link underline */
-a, p{
-    color: #D6D6B1;
-    text-decoration: none;
-    font-family:'Trebuchet MS';
-}
-/* Style the links when hovered over */
-a:hover {
-    color: #344E41;
-}
-
-/* Create a container for the page content with space between the three columns */
-.container {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
 }
 
-/* Style for the three columns within the container */
-.column1, .column2, .column3 {
-    width: 30%;
-    padding: 1.25em;
-    margin: 1.25em;
-    box-sizing: border-box;
-    box-shadow: 0 4px 8px 0;
-    height: 45.625em;
-    border-radius: 50px;
-    background-color: #A3B18A;
+#logo {
+    font-weight: 600;
+    font-size: 1.2em;
+    border: 2px solid black;
+    display: inline;
+    padding: 5px;
 }
 
-/* Style for main heading */
-h1 {
-    text-align: center;
-    font-size: 1.75em;
-    color: #D6D6B1;
+li {
+    margin-left: 4em;
 }
 
-/* Styles for the three different columns*/
-.assignments, .information, .future {
-    text-align: justify;
-    list-style-type: none;
-    font-size: 1.5em;
-    font-family: Helvetica;
-    color: #D6D6B1;
+ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0px;
 }
 
-/* Style for main images on the page */
+a {
+    color: black;
+    margin: 0;
+}
+
+/* MAIN */
+
 .main-img {
-    width: 60%;
-    height: 60%;
-    margin-left: 2.5em;
+    width: 30%;
 }
 
-/* Style of footer */
-.foot {
-    padding: 0.9375em;
-    margin: 0.9375em 20% 0.9375em 20%;
-    box-sizing: border-box;
-    box-shadow: 0 4px 8px 0;
-    height: 6.25em;
-    background-color: #A3B18A;
-    border-radius: 3.125em;
-    text-align: center;
-    font-family: 'Trebuchet MS';
-    opacity: 75%;
+/* PROJECT IMAGE*/
+
+figure {
+    margin-left: 0;
 }
 
-/* Color of the active page in the navigation bar*/
-a.active {
-    color: #344E41;
+.project-img {
+    width: 100%;
+}
+
+/* CONTACT FORM*/
+
+#contact-header {
+    margin-left: 12%;
 }
 
 /* Style for the container around the contact form */
-.contact-container{
-    height: 45.625em;
-    background-color: #A3B18A;
-    margin: 1.25em 30% 1.5625em 30%;
-    border-radius: 50px;
-    box-shadow: 0 4px 8px 0;
-    text-align: center;
+.contact-container {
+    height: 75%;
+    width: 50%;
+    margin: 1.25em 25%;
+    padding: 1em;
+    border: 2px solid black;
 }
 
 /* Style for the input fields of the contact form */
@@ -143,7 +92,6 @@ textarea {
 
 /* Style for the submit button */
 button {
-    background-color: #D6D6B1;
     border-radius: 1.25em;
     border-color: black;
     font-size: 1.375em;
@@ -151,6 +99,7 @@ button {
     text-align: center;
     display: flex;
     margin: auto;
+    margin-bottom: 1em;
 }
 
 /* Style for when hovering over the submit button */
@@ -159,10 +108,79 @@ button:hover {
     cursor: pointer;
 }
 
-/* Style for the header of the contact form */
-h2 {
-    text-align: center;
-    font-size: 2.5em;
-    color: #344E41;
-    padding-top: 1.25em;
+/* PROJECT SHOWCASE*/
+
+#design-h1 {
+    font-size: 2em;
+    font-weight: 600;
+    margin-left: 10%;
+}
+
+.design-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 1em;
+    margin-top: 1em;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+.design {
+    display: flex;
+    justify-content: center;
+}
+
+.design-img, figcaption {
+    width: 100%;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 3em;
+    border-top: 1px solid black;
+}
+
+/* Media Query */
+
+/* 560px */
+
+@media screen and (max-width: 559px) {
+    header, ul {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    ul {
+        margin-top: 0;
+    }
+
+    li {
+        margin-left: 0px;
+        margin-bottom: 1em;
+    }
+
+    .project-showcase {
+        display: grid;
+    }
+}
+
+/* between 590 / 560px */
+
+@media screen and (min-width: 560px) {
+    .project-showcase {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 590px */
+
+@media screen and (min-width: 800px) {
+    .project-showcase {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1em;
+    }
 }
