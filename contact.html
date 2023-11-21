@@ -26,19 +26,20 @@
     </nav>
 </header>
 <body>
-    <div class="contact-container"> <!-- Container for the contact form -->
-        <h2 id="contact-header">Contact Form</h2> <!-- Contact header -->
-        <form action="index.html"> <!-- Redirects you from the contact form to the landing page when "submit message" is clicked-->
-        <input type="text" name="fname" placeholder="First Name" autocomplete="off" required> <!-- First name input field -->
-        <input type="text" name="lname" placeholder="Last Name" autocomplete="off" required> <!-- Last name input field -->
-        <input type="email" name="emal" placeholder="Email Adress" autocomplete="off" required> <!-- Email adress input field -->
-        <textarea rows="5" cols="60" placeholder="Enter Message" autocomplete="off"></textarea> <!-- Message input field -->
-        <button type="submit">Submit Message</button> <!-- Submit button -->
-    </form>
+    <div class="contact-container">
+        <h2 id="contact-header">Contact Form</h2>
+        <form id="contactForm">
+            <input type="text" name="fname" id="fname" placeholder="First Name" autocomplete="off" required>
+            <input type="text" name="lname" placeholder="Last Name" autocomplete="off" required>
+            <input type="email" name="email" placeholder="Email Address" autocomplete="off" required>
+            <textarea rows="5" cols="60" placeholder="Enter Message" autocomplete="off"></textarea>
+            <button id="submitBtn" type="submit">Submit Message</button>
+        </form>
     </div>
     <footer>
         <p>Copyright © Elliot Nilsson <br>
             All rights reserved.</p>
     </footer>
+    <script src="Js/script.js"></script>
 </body>
 </html>
